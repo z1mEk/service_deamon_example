@@ -1,23 +1,15 @@
 #! /bin/sh
 ### BEGIN INIT INFO
-# Provides:          
-# Required-Start:    $remote_fs
-# Required-Stop:     $remote_fs
-# Default-Start:     2 3 4 5
-# Default-Stop:      0 1 6
-# Short-Description: Sample_GT02 daemon startup script
-# Description:       Sample Server for GT02 class 
-### END INIT INFO
-
-# Author: Tony Gil 
 #
+#
+### END INIT INFO
 
 # Do NOT "set -e"
 
-# PATH should only include /usr/* if it runs after the mountnfs.sh script
+# PATH should only include /usr/*
 PATH=/sbin:/usr/sbin:/bin:/usr/bin
 DESC="Sample Daemon"
-NAME=sampleserver_gt02
+NAME=sampleserver
 DAEMON=/usr/sbin/$NAME
 PIDFILE=/var/run/$NAME.pid
 SCRIPTNAME=/etc/init.d/$NAME
